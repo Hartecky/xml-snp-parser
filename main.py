@@ -37,14 +37,6 @@ def parse_arguments():
     return args
 
 
-
-
-
-# name = 'ABCA1'
-# rsid = 'rs2230806'
-
-
-
 if __name__ == '__main__':
     
     args = parse_arguments()
@@ -57,5 +49,3 @@ if __name__ == '__main__':
     dist = dist_processing.distance_processing(dataset, args.reference_snp, args.distance)
 
     dist_processing.compare_values(dataset, args.reference_snp, dist)
-
-
