@@ -7,8 +7,8 @@ def key_validation(name, data):
         print(f"Key '{name}' exists in a dataset")
         return True
     else:
-        print(f"Key '{name}' does not exists in a dataset\nOperation stopped")
-        return False
+        print(f"\nGene with name {name} does no exists in a current database\nOperation stopped \nCheck if your gene name is provided correctly or update database with \nanother XML file with SNP connected to a specified gene.")
+        raise SystemExit
 
 
 def parse_snp_id(gene_name, dataset):
@@ -16,6 +16,7 @@ def parse_snp_id(gene_name, dataset):
     if key_validation(gene_name, dataset):
         pass
     else:
+
         return False
 
     subset = dataset[gene_name]

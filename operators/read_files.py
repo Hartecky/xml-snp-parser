@@ -1,5 +1,13 @@
 import os
 
+def prepare_space(file):
+    if os.path.isfile(file):
+        os.remove(file)
+        print(f"File {file} from previous analysis has been removed")
+    else:
+        pass
+
+
 def import_database(path):
 
     dictionary = dict()

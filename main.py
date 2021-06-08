@@ -38,10 +38,11 @@ def parse_arguments():
 
 
 if __name__ == '__main__':
-    
-    args = parse_arguments()
-    path = r'C:\Users\Bartek\Desktop\xml-snp-parser\database'
 
+    args = parse_arguments()
+
+    read_files.prepare_space('results.txt')
+    
     data = read_files.import_database(args.database)
 
     dataset = snp_parser.parse_snp_id(args.gene_name, data)

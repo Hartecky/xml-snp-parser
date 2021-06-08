@@ -31,3 +31,5 @@ def compare_values(processed_dictionary, researched_input, distance):
                     break           
                 else:
                     continue
+
+    print("Analysis completed")
