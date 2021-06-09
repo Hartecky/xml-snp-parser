@@ -2,7 +2,26 @@
 
 ## Project description
 
-The aim of this project is to create a simple tool for SNP analysis contained in XML structured file from NCBI FTP server. These files consists of data with tags:
+The aim of this project is to create a simple tool for SNP analysis contained in XML structured file from NCBI FTP server:
+```
+https://ftp.ncbi.nlm.nih.gov/snp/organisms/human_9606/genotype_by_gene/
+```
+
+## Fragment of a file structure
+
+```
+<SnpInfo rsId="781249833" observed="G/T">
+        <SnpLoc genomicAssembly="108:GRCh38.p7" geneId="19" geneSymbol="ABCA1" chrom="9" start="104791890" locType="2" rsOrientToChrom="fwd" contigAllele="T" contig="NT_008470:20"/>
+        <SsInfo ssId="1689589581" locSnpId="EXAC_0.3.9:g107554172t&gt;g" ssOrientToRs="fwd">
+            <ByPop popId="16571" sampleSize="121386">
+                <AlleleFreq allele="G" freq="0"/>
+                <AlleleFreq allele="T" freq="1"/>
+            </ByPop>
+        </SsInfo>
+    </SnpInfo>
+```
+
+Main attributes:
 
 - Single Nucleotide Polymorphisms ID - __rsId__ tag
 - Their positions in the gene - __start__ tag
@@ -10,7 +29,7 @@ The aim of this project is to create a simple tool for SNP analysis contained in
 - Strandness - __rsOrientToChrom__ tag
 
 and many more, but these above are in our fields of interests.
-This repo contains a set of 20 genes in different XML files, some SNPs of this genes contributes to the development of Alzheimer's disease
+This repo contains a database direcotory, which is a set of 20 genes in different XML files, some SNPs of this genes contributes to the development of Alzheimer's disease. The database directory can be extended with another gene files.
 
 ## Runnning script
 
