@@ -39,15 +39,15 @@ if __name__ == '__main__':
 
 	args = parse_arguments()
 
-	read_files.prepare_space('results.txt')
+	#read_files.prepare_space('results.txt')
 
 	data = read_files.import_database(tmp)
 
 	dataset = snp_parser.parse_snp_id(args.gene_name, data)
 
-	dist = dist_processing.distance_processing(dataset, args.reference_snp, args.distance)
+	dist = dist_processing.distance_processing(dataset[0], args.reference_snp, args.distance)
 	
-	dist_processing.compare_values(dataset, args.reference_snp, dist)
+	dist_processing.compare_values(dataset[0], args.reference_snp, dist, dataset[1])
 
 
 

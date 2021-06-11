@@ -16,7 +16,6 @@ def parse_snp_id(gene_name, dataset):
     if key_validation(gene_name, dataset):
         pass
     else:
-
         return False
 
     subset = dataset[gene_name]
@@ -36,4 +35,4 @@ def parse_snp_id(gene_name, dataset):
             find_orientation = re.findall(r'rsOrientToChrom="(.*?)"', line)
             results[tmp_id] = [int(find_position[0]), find_genotype[0], find_orientation[0]]
             
-    return results
+    return results, gene_name
