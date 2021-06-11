@@ -21,3 +21,8 @@ def import_database(path):
                     dictionary[names[0]] = text
 
     return dictionary
+
+
+
+    
+
