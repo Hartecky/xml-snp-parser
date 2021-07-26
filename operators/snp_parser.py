@@ -7,7 +7,7 @@ def key_validation(name, data):
         print(f"Key '{name}' exists in a dataset")
         return True
     else:
-        print(f"\nGene with name {name} does no exists in a current database\nOperation stopped \nCheck if your gene name is provided correctly or update database with \nanother XML file with SNP connected to a specified gene.")
+        print(f"\nGene with name {name} does not exists in a current database\nOperation stopped \nCheck if your gene name is provided correctly or update database with \nanother XML file with SNP connected to a specified gene.")
         raise SystemExit
 
 
