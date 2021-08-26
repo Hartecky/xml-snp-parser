@@ -7,6 +7,8 @@ The aim of this project is to create a simple tool for SNP analysis contained in
 https://ftp.ncbi.nlm.nih.gov/snp/organisms/human_9606/genotype_by_gene/
 ```
 
+It allows user to check whether there are other mutations within the polymorphism being tested with specified distance, what can be useful for biologist in designing primers for DMAS (Double mismatch allele specific) qPCR reaction primers.
+
 ## Fragment of a file structure
 
 ```
