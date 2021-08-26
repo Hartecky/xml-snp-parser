@@ -51,4 +51,4 @@ python main.py
 
 Results are saved into 'results.txt' file.
 
-Note: After analysis, running script again is deleting existing files with results, so please copy them into another file.
+Note: After analysis, running script again is deleting existing files with results, so make sure that you copied them into another file.
